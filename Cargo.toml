@@ -1,0 +1,17 @@
+[package]
+name = "x-web-wreq-client"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+base64 = "0.22"
+flate2 = { version = "1.1", default-features = false, features = ["rust_backend"] }
+regex = "1"
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+url = "2"
+wreq = { version = "=6.0.0-rc.31", features = ["brotli", "cookies", "deflate", "form", "gzip", "zstd"] }
+wreq-util = "=3.0.0-rc.14"
